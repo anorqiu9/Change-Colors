@@ -98,18 +98,18 @@ function CurrentPage ()
 	       else
 		   me.displayDefault(tabId);
 
-	       chrome.pageAction.show(tabId);
+	       chrome.browserAction.show(tabId);
 	});
 
     }
 
     me.displayDefault = function(tabId){
-	chrome.pageAction.setIcon({tabId: tabId, path: "icons/colors_icons_grey.png"});
+	chrome.browserAction.setIcon({tabId: tabId, path: "icons/colors_icons_grey.png"});
     }
 
 
     me.displayOverriden = function(tabId){
-	chrome.pageAction.setIcon({tabId: tabId, path: "icons/colors_icons.png"});
+	chrome.browserAction.setIcon({tabId: tabId, path: "icons/colors_icons.png"});
     }
 
 
